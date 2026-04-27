@@ -57,15 +57,31 @@
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.0.0-preview.3.26207.106, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[11.0.0-preview.3.26207.106, )"
+            },
+            "Microsoft.Extensions.Configuration.Contrib.Stormpath.PropertiesFile": {
+              "target": "Package",
+              "version": "[0.1.0-beta5, )"
             },
             "Microsoft.Extensions.Configuration.FileExtensions": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.0.0-preview.3.26207.106, )"
+            },
+            "Microsoft.Extensions.Configuration.FileProviderExtensions": {
+              "target": "Package",
+              "version": "[1.0.0-rc1-final, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.0.0-preview.3.26207.106, )"
+            },
+            "Microsoft.Extensions.Configuration.KeyPerFile": {
+              "target": "Package",
+              "version": "[11.0.0-preview.3.26207.106, )"
             },
             "MySql.Data": {
               "target": "Package",
