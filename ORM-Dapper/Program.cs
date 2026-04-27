@@ -11,7 +11,7 @@ namespace ORM_Dapper
             .AddJsonFile("appsettings.json")
             .Build();
         
-        static string connString = config.GetConnectionString("DefaultConnection");
+        static string? connString = config.GetConnectionString("DefaultConnection");
         
         static IDbConnection conn = new MySqlConnection(connString);
         
@@ -22,11 +22,11 @@ namespace ORM_Dapper
             var products = productRepository.GetAllProducts();
             foreach (var product in products)
             {
-                Console.WriteLine(product.ProductID);
+                Console.WriteLine(product.ProductId);
                 Console.WriteLine(product.Name);
                 Console.WriteLine(product.Price);
                 Console.WriteLine(product.StockLevel);
-                Console.WriteLine(product.CategoryID);
+                Console.WriteLine(product.CategoryId);
                 Console.WriteLine(product.OnSale);
                 Console.WriteLine("--------------------");
                 

@@ -14,13 +14,20 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.7" />
     <PackageReference Include="MySql.Data" Version="9.7.0" />
   </ItemGroup>
+<!--  <ItemGroup>-->
+<!--    <None Remove="appsettings.json" />-->
+<!--  </ItemGroup>-->
+
+ <!-- <ItemGroup>
+  <Content Include="obj\Debug\appsettings.json" />
+   <Content Include="obj\Debug\net6.0\appsettings.json" />
+    <Content Include="obj\Debug\net9.0\appsettings.json" />
+  </ItemGroup> -->
 
   <ItemGroup>
-    <None Remove="appsettings.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="obj\Debug\appsettings.json" />
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
