@@ -6,16 +6,18 @@ namespace ORM_Dapper
 {
     public class Program
     {
+        static IConfiguration config = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json")
+            .Build();
+        
+        static string connString = config.GetConnectionString("DefaultConnection");
+        
+        static IDbConnection conn = new MySqlConnection(connString);
+        
         static void Main(string[] args)
         {
-            var config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
-                .Build();
-        
-            string connString = config.GetConnectionString("DefaultConnection");
-
-            IDbConnection conn = new MySqlConnection(connString);
+            
             var productRepository = new DapperProductRepository(conn);
             var products = productRepository.GetAllProducts();
             foreach (var product in products)
