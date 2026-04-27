@@ -38,4 +38,12 @@ public class DapperProductRepository : IProductRepository
 
 
     }
+
+    public void DeleteProduct(Product product)
+    {
+        _conn.Execute("DELETE FROM Sales WHERE ProductId = @id;", new { id = product.ProductId });
+        _conn.Execute("DELETE FROM Reviews WHERE ProductId = @id;", new { id = product.ProductId });
+        _conn.Execute("DELETE FROM Products WHERE ProductId = @id;", new { id = product.ProductId });
+        
+    }
 }               
