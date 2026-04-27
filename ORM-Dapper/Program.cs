@@ -19,6 +19,18 @@ namespace ORM_Dapper
         {
             
             var productRepository = new DapperProductRepository(conn);
+            var productToUpdate = productRepository.GetProduct(942);
+            productToUpdate.Name = "Updated Product";
+            productToUpdate.OnSale = true;
+            productToUpdate.StockLevel = 10;
+            productToUpdate.Price = 2999;
+            productRepository.UpdateProduct(productToUpdate);
+            Console.WriteLine("Sweet Ass Gaming Laptop");
+            Console.WriteLine(productToUpdate.Name);
+            Console.WriteLine(productToUpdate.Price);
+            Console.WriteLine(productToUpdate.StockLevel);
+            Console.WriteLine(productToUpdate.OnSale);
+            Console.WriteLine("--------------------");
             var products = productRepository.GetAllProducts();
             foreach (var product in products)
             {
