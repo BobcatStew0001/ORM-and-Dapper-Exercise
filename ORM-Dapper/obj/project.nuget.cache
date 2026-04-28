@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DpMFRzwRRU4=",
+  "dgSpecHash": "KDeiFK3mnww=",
   "success": true,
-  "projectFilePath": "C:\\Users\\brown\\OneDrive\\Documents\\ReposCSharp\\ORM-and-Dapper-Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
+  "projectFilePath": "C:\\Users\\brown\\OneDrive\\Documents\\ReposCSharp\\BestBuy Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brown\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\brown\\.nuget\\packages\\dapper\\2.1.72\\dapper.2.1.72.nupkg.sha512",
