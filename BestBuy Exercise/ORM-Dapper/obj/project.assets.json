@@ -1189,11 +1189,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brown\\OneDrive\\Documents\\ReposCSharp\\BestBuy Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
+      "projectUniqueName": "C:\\Users\\brown\\OneDrive\\Documents\\ReposCSharp\\BestBuy Exercise\\BestBuy Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
       "projectName": "ORM-Dapper",
-      "projectPath": "C:\\Users\\brown\\OneDrive\\Documents\\ReposCSharp\\BestBuy Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
+      "projectPath": "C:\\Users\\brown\\OneDrive\\Documents\\ReposCSharp\\BestBuy Exercise\\BestBuy Exercise\\ORM-Dapper\\ORM-Dapper.csproj",
       "packagesPath": "C:\\Users\\brown\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brown\\OneDrive\\Documents\\ReposCSharp\\BestBuy Exercise\\ORM-Dapper\\obj\\",
+      "outputPath": "C:\\Users\\brown\\OneDrive\\Documents\\ReposCSharp\\BestBuy Exercise\\BestBuy Exercise\\ORM-Dapper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
